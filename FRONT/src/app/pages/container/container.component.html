@@ -1,3 +1,51 @@
-<p>
-  container works!
-</p>
+<body class="container-fluid bg-color vh-100">
+  <header class="pt-4">
+    <app-home></app-home>
+  </header>
+  <section class="row -5 mt-5">
+    <div class="col-xl-2 me-2 bg-secondary">
+      <form action="" [formGroup]="profileFormButton" (submit)="addButton()">
+        <h1 class="fs-5 text-center pt-2 text-">Creater card</h1>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">
+            Id
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            formControlName="id"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">
+            Title Card
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            formControlName="title"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">
+            Contents
+          </label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            formControlName="description"
+          ></textarea>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-dark mt-2 w-50">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-xl-3 me-2 bg-primary">lll</div>
+    <div class="col-xl-3 me-2 bg-danger">lll</div>
+    <div class="col-xl-3 bg-danger">lll</div>
+  </section>
+</body>
