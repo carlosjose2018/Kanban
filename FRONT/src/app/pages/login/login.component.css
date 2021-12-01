@@ -1,0 +1,12 @@
+.bg-image {
+  background-image: url('../../../assets/city-g11eea6ca4_1280.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-form {
+  background-color: rgba(0, 0, 1, 0.3);
+  backdrop-filter: blur(5px);
+}
+.bg-color-orange {
+  color: #f75f00;
+}
